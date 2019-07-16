@@ -1,5 +1,6 @@
 @import "bootstrap";
 
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -17,16 +18,19 @@ h1, h2, h3, h4, h5, h6 {
   padding:0;
 }
 
-body {
-  background: image_url('tiles.png');
-}
-
 .navbar {
   background: image_url('carbon.png');
   box-shadow: 0px 1px 3px #2a2a2a;
 }
 
+.navbar-inverse .navbar-brand {
+  color: #edd521;
+  font-family: 'capture_itregular', sans-serif;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
 body {
-  background: url('/assets/crossword.png');
+  background: image_url('tiles.png');
   font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
