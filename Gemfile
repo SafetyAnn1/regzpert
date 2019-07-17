@@ -71,3 +71,5 @@ end
 
 # will_paginate (revised)
 gem 'will_paginate', '> 3.0'
+
+gem 'simple_form'
