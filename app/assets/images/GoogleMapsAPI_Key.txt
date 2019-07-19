@@ -1,0 +1,7 @@
+Google Maps API Key:
+AIzaSyAzJPCICPHygc5OuYXv_3qhujO-DDwAREg
+
+Created for UT Coding Bootcamp - Yelp Clone Assignment
+using annmeier3@gmail.com email address 
+
+heroku config:set GEOCODER_API_KEY="AIzaSyAzJPCICPHygc5OuYXv_3qhujO-DDwAREg"
