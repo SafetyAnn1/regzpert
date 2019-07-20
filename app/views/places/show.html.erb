@@ -72,7 +72,7 @@
     </button>
 </div>
 
-<div class='clear'></div>
+<div class="clear"></div>
 
 <div class="row">
   <% @place.comments.each do |comment| %>
@@ -85,22 +85,24 @@
         <small><%= comment.user.email %></small>
       </blockquote>
     </div>
-  <% end %>
+ <% end %>
 </div>
+
+<div class="row">    
+    <% @place.photos.each do |photo| %>
+    <div class="col-12 col-sm-6">
+        <blockquote>
+          <% if photo.caption.present? %>
+          <b><%= photo.caption %></b> -
+          <% end %>
+        </blockquote>
+      </div>
+    <% end %>
+  </div>  
+
 
  <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
   <%= f.input :caption %>
   <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
 <% end %>
-
-<h1>Add Photos</h1>
-
-<% @place.photos.each do |photo| %>
-  <div>
-    <blockquote>
-      <b><%= photo.caption %></b> -
-    </blockquote>
-  </div>
-<% end %>
-   
 
